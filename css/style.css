@@ -86,7 +86,7 @@ p {
 }
 
 a {
-  color: #17b3e8;
+  color: #f05f40;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -935,4 +935,93 @@ a.btn:focus {
 
 h2 {
   color: #fff;
+}
+
+.welcome-heading h2 {
+  color: #f05f40;
+}
+.welcome-heading {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.welcome-heading:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-heading h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f05f40;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  transition: opacity 2s ease, transform 1s ease;
+}
+
+.welcome-heading h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #e11f1f;
+  margin: 20px auto;
+}
+
+.welcome-heading .intro {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  transition: opacity 2s ease;
+}
+
+.welcome-heading h2.fade-out,
+.welcome-heading .intro.fade-out {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-box {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-name h2 {
+  color: #f05f40;
 }
